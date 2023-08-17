@@ -6,8 +6,6 @@ export const initialState = {
 };
 
 const reducer = (state = initialState, action) => {
-  // console.log("🚀 ~ file: reducer.jsx:9 ~ reducer ~ state:", state);
-  // console.log("🚀 ~ file: reducer.jsx:9 ~ reducer ~ action:", action);
   switch (action.type) {
     case SET_JOB:
       return {

@@ -1,13 +1,13 @@
-import { useRef, useReducer } from "react";
-import reducer, { initialState } from "../redux/todo/reducer";
+import { useReducer, useRef } from "react";
 import { addJob, deleteJob, setJob } from "../redux/todo/actions";
-import logger from "../redux/todo/logger";
+// import logger from "../redux/todo/logger";
+import { useDispatch, useSelector } from "react-redux";
 
 export default function TodoApp() {
-  const [state, dispatch] = useReducer(logger(reducer), initialState);
-//   console.log("🚀 ~ file: TodoApp.jsx:7 ~ TodoApp ~ state:", state);
-  const { job, jobs } = state;
-//   console.log("🚀 ~ file: TodoApp.jsx:9 ~ TodoApp ~ jobs:", jobs);
+  // const [state, dispatch] = useReducer(logger(reducer), initialState)
+  const dispatch = useDispatch()
+  const todoState = useSelector(state => state.todo)
+  const { job, jobs } = todoState;
   const inputRef = useRef();
   const handleSubmit = () => {
     inputRef.current.focus();

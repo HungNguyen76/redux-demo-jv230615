@@ -1,5 +1,4 @@
-// import { combineReducers } from 'redux'
 import { createStore} from 'redux'
-// import reducer from './counter/reducer'
-import reducer from './todo/reducer'
+import reducer from './index'
+
 export const store = createStore(reducer)
