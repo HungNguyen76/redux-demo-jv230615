@@ -7,7 +7,8 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 
-import { store } from "./redux/store.jsx";
+// import { store } from "./redux/store.jsx";
+import { store } from './redux-toolkit/stores'
 import { Provider } from "react-redux";
 
 ReactDOM.createRoot(document.getElementById("root")).render(

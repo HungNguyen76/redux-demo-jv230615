@@ -10,6 +10,8 @@ export default defineConfig({
       "@": fileURLToPath(new URL("./src", import.meta.url)),
       "@redux": fileURLToPath(new URL("./src/redux", import.meta.url)),
       "@img": fileURLToPath(new URL("./src/assets/images", import.meta.url)),
+      "@api": fileURLToPath(new URL("./src/services/api", import.meta.url)),
+      "@rtk": fileURLToPath(new URL("./src/redux-toolkit/stores/slices", import.meta.url)),
     },
   },
 })

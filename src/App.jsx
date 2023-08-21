@@ -26,7 +26,8 @@ import './App.css'
 import HomePage from './views/pages/HomePage';
 // import Navbar from './views/components/Navbar';
 import Counter from './components/Counter';
-import TodoApp from './components/TodoApp';
+// import TodoApp from './components/TodoApp';
+import Posts from './components/Posts';
 
 // const dogArray = [
 //   {
@@ -63,7 +64,8 @@ function App() {
       <div>
         <HomePage />
         <Counter />
-        <TodoApp />
+        {/* <TodoApp /> */}
+        {/* <Posts /> */}
         {/* <Router /> */}
         {/* <WordCounter /> */}
         {/* <Counter /> */}
